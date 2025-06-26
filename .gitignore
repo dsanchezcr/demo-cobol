@@ -1,0 +1,19 @@
+# COBOL compiled binaries
+*.exe
+detect_duplicates
+detect_duplicates.exe
+
+# Test output files
+test_output/
+*.out
+*.log
+
+# Coverage reports
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Temporary files
+*.tmp
+*~

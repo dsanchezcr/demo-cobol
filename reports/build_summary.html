@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COBOL Payment Duplicates - Build Summary Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .warning { background-color: #fff3cd; border-color: #ffeaa7; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .status-pass { color: green; font-weight: bold; }
+        .status-fail { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>COBOL Payment Duplicates - Build Summary Report</h1>
+        <p>Generated on: 2025-06-26 14:09:38</p>
+        <p>Build System Version: 1.0.0</p>
+    </div>
+    <div class="section success">
+        <h2>Compilation Status: <span class='status-pass'>✓ PASS</span></h2>
+        <p>COBOL program compilation using GnuCOBOL compiler.</p>
+    </div>
+    <div class="section success">
+        <h2>Test Results: <span class='status-pass'>✓ PASS (7 tests)</span></h2>
+        <p>Comprehensive test suite covering various scenarios including duplicates, no duplicates, edge cases, and large datasets.</p>
+        <h3>Test Cases Executed:</h3>
+        <table>
+            <tr><th>Test Case</th><th>Description</th><th>Status</th></tr>
+            <tr><td>test1_with_duplicates</td><td>Tests duplicate detection functionality</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test2_no_duplicates</td><td>Tests handling of unique transactions</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test3_all_duplicates</td><td>Tests scenario with all identical transactions</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test4_multiple_duplicates</td><td>Tests multiple different duplicate groups</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test5_single_record</td><td>Tests single transaction processing</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test6_empty_data</td><td>Tests empty data file handling</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+            <tr><td>test7_large_dataset</td><td>Tests larger dataset processing</td><td><span class='status-pass'>✓ PASS</span></td></tr>
+        </table>
+    </div>
+    <div class="section success">
+        <h2>Code Coverage: <span class='status-pass'>✓ EXCELLENT (91%)</span></h2>
+        <p>Code coverage analysis measuring which program paragraphs are executed during testing.</p>
+        <p><a href="../coverage/coverage_report.html">View Detailed Coverage Report</a></p>
+    </div>
+    
+    <div class="section info">
+        <h2>Project Information</h2>
+        <table>
+            <tr><th>Property</th><th>Value</th></tr>
+            <tr><td>Program Name</td><td>DetectDuplicates</td></tr>
+            <tr><td>Language</td><td>COBOL (GnuCOBOL 3.1.2)</td></tr>
+            <tr><td>Purpose</td><td>Payment transaction duplicate detection</td></tr>
+            <tr><td>Input Format</td><td>CSV (transaction_id, amount, date)</td></tr>
+            <tr><td>Build System</td><td>Custom Shell Script v1.0.0</td></tr>
+        </table>
+    </div>
+    
+    <div class="section info">
+        <h2>Build Artifacts</h2>
+        <ul>
+            <li><strong>Executable:</strong> src/detect_duplicates</li>
+            <li><strong>Test Results:</strong> test_output/ directory</li>
+            <li><strong>Coverage Report:</strong> coverage/coverage_report.html</li>
+            <li><strong>Build Summary:</strong> reports/build_summary.html</li>
+        </ul>
+    </div>
+</body>
+</html>
